@@ -12,6 +12,8 @@ public class Undo {
         if (instance == null) {
             instance = new Undo();
             System.out.println("Instancia vacía, se ha creado una nueva");
+        }else{
+            System.out.println("Instancia ya está creada");
         }
         return instance;
     }
@@ -22,8 +24,9 @@ public class Undo {
     }
 
     public void deleteUndo(int number) {
+        String deleteorder = undoVariable.get(number);
         undoVariable.remove(number);
-        System.out.println("Se ha elimiando el pedido de la posición " +number);
+        System.out.println("Se ha elimiando el " +deleteorder);
 
     }
     public void printUndo() {

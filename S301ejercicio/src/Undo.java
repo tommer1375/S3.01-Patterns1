@@ -23,6 +23,7 @@ public class Undo {
 
     public void deleteUndo(int number) {
         undoVariable.remove(number);
+        System.out.println("Se ha elimiando el pedido de la posición " +number);
 
     }
     public void printUndo() {

@@ -23,10 +23,10 @@ public class Undo {
         System.out.println("Se ha añadido "+newVariable);
     }
 
-    public void deleteUndo(int number) {
-        String deleteorder = undoVariable.get(number);
-        undoVariable.remove(number);
-        System.out.println("Se ha elimiando el " +deleteorder);
+    public void deleteUndo() {
+      String removeOrder= undoVariable.remove((undoVariable.size()-1));
+        System.out.println("Se ha elimiando el " +removeOrder);
+
 
     }
     public void printUndo() {

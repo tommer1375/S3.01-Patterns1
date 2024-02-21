@@ -14,8 +14,7 @@ public class Main {
             undoVariable1.createUndo("Pedido 5");
 
             undoVariable1.printUndo();
-            int number=(int)Math.floor(Math.random()*5);
-            undoVariable1.deleteUndo(number);
+            undoVariable1.deleteUndo();
             undoVariable1.printUndo();
     }
 
